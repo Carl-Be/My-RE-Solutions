@@ -1,0 +1,10 @@
+main: ; Label     
+  push 0xFFFFFFFF ;Push 0xFFFFFFFF onto the stack because its the argument for MessageBeep. If it's a signed value it's 
+                  ;-1 in Base10 which can be used to tell the OS an error has occurred.      
+                  
+  call MessageBeep ;Code execution jumps to MessageBeep but sets the eip reg to the xor instruction address that follows
+                   ;the call instructions.     
+                   
+  xor  eax,eax ;clear the eax reg to 32 0s.     
+  
+  retn ;return to the calling function of main. 

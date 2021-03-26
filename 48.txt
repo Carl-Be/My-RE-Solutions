@@ -15,7 +15,7 @@ int main(){
 }
 
 void MessageBeep(int arg){
-	/* 
+  /* 
     Do something usefull with arg. Like use stdio in a useful way.  
   */
 }

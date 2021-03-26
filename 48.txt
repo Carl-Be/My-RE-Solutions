@@ -1,3 +1,35 @@
+Attempt Two:
+========================================================================================================================================
+The asm code looks like this in C:
+
+************************************************************************
+#include <stdio.h>
+
+void MessageBeep(int arg);
+
+int main(){
+
+	MessageBeep(-1);
+
+	return 0;
+}
+
+void MessageBeep(int arg){
+	/* 
+    Do something usefull with arg. Like use stdio in a useful way.  
+  */
+}
+***********************************************************************
+
+Answer: 
+        main() sole purpose is to run MessageBeep() then exit the program under normal conditions. 
+
+========================================================================================================================================
+
+
+
+Attempt One:
+========================================================================================================================================
 main: ; Label     
   push 0xFFFFFFFF ;Push 0xFFFFFFFF onto the stack because its the argument for MessageBeep. If it's a signed value it's 
                   ;-1 in Base10 which can be used to tell the OS an error has occurred.      
@@ -8,3 +40,5 @@ main: ; Label    
   xor  eax,eax ;clear the eax reg to 32 0s.     
   
   retn ;return to the calling function of main. 
+========================================================================================================================================
+

@@ -1,5 +1,5 @@
 Q1: What is this programs required password?
-A1:
+A1: metallica 
 
 
 Q2:Try to change the password by patching the executable file.

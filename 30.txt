@@ -1,1 +1,18 @@
+Q1: What is this programs required password?
+A1:
 
+
+Q2:Try to change the password by patching the executable file.
+A2:
+
+
+Q3:Try using a password with a different length.
+A3:
+
+
+Q4:What is the shortest possible password?
+A4:
+
+
+Q5: Try to crash the program using only string input.
+A5:

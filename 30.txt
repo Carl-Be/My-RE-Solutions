@@ -15,4 +15,6 @@ A4:
 
 
 Q5: Try to crash the program using only string input.
-A5:
+A5: password is not correct
+*** stack smashing detected ***: terminated
+

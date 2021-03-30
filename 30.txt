@@ -8,7 +8,7 @@ A2:
         2. Changed metallica to AAAAAAAAA
 
 Q3:Try using a password with a different length.
-A3:
+A3: Inconsistency detected by ld.so: dl-version.c: 205: _dl_check_map_versions: Assertion `needed != NULL' failed!
 
 
 Q4:What is the shortest possible password?

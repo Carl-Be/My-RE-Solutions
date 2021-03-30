@@ -12,7 +12,9 @@ A3: Inconsistency detected by ld.so: dl-version.c: 205: _dl_check_map_versions: 
 
 
 Q4:What is the shortest possible password?
-A4:
+A4: 1 byte 
+        1. hexeditor ./password1 
+        2. Changed \x41\x41\x41\x41\x41\x41\x41\x41\x41 to \x41\x00\x41\x41\x41\x41\x41\x41\x41 
 
 
 Q5: Try to crash the program using only string input.

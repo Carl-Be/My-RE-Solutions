@@ -3,8 +3,9 @@ A1: metallica
 
 
 Q2:Try to change the password by patching the executable file.
-A2:
-
+A2: 
+        1. vim ./password1
+        2. Changed metallica to AAAAAAAAA
 
 Q3:Try using a password with a different length.
 A3:

@@ -11,8 +11,8 @@ A3:
 NOTES:
 ==========================================================================================================================================
 This cmp is interesing. its a 1 byte value being cmp to a dereferenced 1 byte value. 
-The following shows the code snipets of the disasembler / c code. Looking for a 1 byte 
-password thats towards the top of code execution. 
+The following shows the code snipets of the disasembler / c code. 90% sure the password 
+im looking for a 1 byte value 
 
 0x0000140e	0x0040300e	0x3a,0x0a	cmp	cl,byte ptr [edx]
 -------------------------------------

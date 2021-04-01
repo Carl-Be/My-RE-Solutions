@@ -6,3 +6,21 @@ A2:
 
 Q3: As an additional exercise, try to change the password by patching the executable file.
 A3:
+
+
+NOTES:
+==========================================================================================================================================
+This cmp is interesing. its a 1 byte value being cmp to a dereferenced 4 byte value. 
+The following shows the code snipets of the disasembler / c code. Looking for a 1 byte password most likely. 
+
+0x0000140e	0x0040300e	0x3a,0x0a	cmp	cl,byte ptr [edx]
+-------------------------------------
+printf("enter password: ");
+scanf(%s, edx);
+
+if([edx] != cl){
+  wrong password
+}
+--------------------------------------
+
+==========================================================================================================================================

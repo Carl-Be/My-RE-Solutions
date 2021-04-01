@@ -1,0 +1,5 @@
+1. This program requires a password. Find it.
+
+2. By the way, multiple passwords may work. Try to find them.
+
+3. As an additional exercise, try to change the password by patching the executable file.

@@ -1,5 +1,8 @@
-1. This program requires a password. Find it.
+Q1: This program requires a password. Find it.
+A1:
 
-2. By the way, multiple passwords may work. Try to find them.
+Q2: By the way, multiple passwords may work. Try to find them.
+A2:
 
-3. As an additional exercise, try to change the password by patching the executable file.
+Q3: As an additional exercise, try to change the password by patching the executable file.
+A3:

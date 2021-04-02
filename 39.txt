@@ -26,6 +26,7 @@ if([edx] != cl){
 
 CodeBrowser 
 ---------------------------------------------------------------------------------------------------------------------------
+
 undefined4 main(void)
 
 {
@@ -45,6 +46,10 @@ undefined4 main(void)
   charPtr = &userInputByte;
   if (userInputByte != '\0') {
     do {
+                    /* !!!! Sums the total of argc !!!!
+                       !!!! If argc = 504 by the time stringBuf !!!! 
+                       !!!! hits 0x00 i've found the password !!!!
+                       !!!! 504/n will get me any passwords that are made of ASCII CHARS !!!! */
       charPtr = charPtr + 1;
       argc = argc + userInputByte;
       userInputByte = *charPtr;
@@ -60,5 +65,6 @@ undefined4 main(void)
   printf(s_password_is_not_correct_00403048);
   return 0;
 }
+
 
 ==========================================================================================================================================

@@ -1,8 +1,15 @@
 Q1: This program requires a password. Find it.
-A1:
+A1: ~~~~
 
 Q2: By the way, multiple passwords may work. Try to find them.
-A2:
+A2: 504/n (as long as ascii chars)
+    1: ~~~~
+    2: 
+    3:
+    4:
+    5:
+    6:
+    
 
 Q3: As an additional exercise, try to change the password by patching the executable file.
 A3:

@@ -16,6 +16,21 @@ A2: 504/n (ascii chars only no whitespace)
 Q3: As an additional exercise, try to change the password by patching the executable file.
 A3:
 
+04/02/2021  01:02 AM    <DIR>          .
+04/02/2021  01:02 AM    <DIR>          ..
+04/01/2021  11:12 PM             6,144 password2.exe
+04/02/2021  01:02 AM             6,144 password2v2.exe.bin
+04/02/2021  12:51 AM               130 passwords.txt
+               3 File(s)         12,418 bytes
+               2 Dir(s)  40,272,564,224 bytes free
+
+C:\Users\Carl\Documents\RE\#39>password2v2.exe.bin
+enter password:
+A
+password is correct
+
+C:\Users\Carl\Documents\RE\#39>
+
 
 NOTES:
 ==========================================================================================================================================

@@ -24,4 +24,41 @@ if([edx] != cl){
 }
 --------------------------------------
 
+CodeBrowser 
+---------------------------------------------------------------------------------------------------------------------------
+undefined4 main(void)
+
+{
+  int argc;
+  char *charPtr;
+  char userInputByte;
+  char stringBuf [127];
+  
+  printf(s_enter_password:_00403000);
+                    /* If userInputByte is successfully read set argc to 1. 
+                       NOTE: scanf returns the amount of successful arguments read.  */
+  argc = scanf(&DAT_00403014,&userInputByte);
+  if (argc != 1) {
+    printf(s_no_password_supplied_00403018);
+  }
+  argc = 0;
+  charPtr = &userInputByte;
+  if (userInputByte != '\0') {
+    do {
+      charPtr = charPtr + 1;
+      argc = argc + userInputByte;
+      userInputByte = *charPtr;
+                    /* This while loop keeps on going until 
+                       charPtr hits a 0x00 in memory. */
+    } while (userInputByte != '\0');
+                    /* 0x1f8 = 504 (Base10) */
+    if (argc == 0x1f8) {
+      printf(s_password_is_correct_00403030);
+      return 0;
+    }
+  }
+  printf(s_password_is_not_correct_00403048);
+  return 0;
+}
+
 ==========================================================================================================================================
